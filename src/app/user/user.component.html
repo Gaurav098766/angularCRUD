@@ -1,0 +1,20 @@
+<!-- <div>
+    <button>
+        <ul *ngFor="let user of users">
+            <li>
+                    <img [src]="'assets/users/' + user.avatar" [alt]="user.name" />
+                    {{user.name}}   
+            </li>
+        </ul>
+    </button>
+</div> -->
+
+<app-card>
+    <div>
+        <button [class.active]="selected" (click)="onSelectUser()">
+            <img [src]="ImagePath" 
+            [alt]="user.name" />
+            <span>{{user.name}}</span>   
+        </button>
+    </div>
+</app-card>
